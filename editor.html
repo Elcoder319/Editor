@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="edit.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="img">
+            <div class="img-box">
+                <img id="image">
+            </div>
+            <div class="upload">
+                <label for="upload">upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="fillters">
+            <ul>
+                <li>
+                    <label for="saturate">Saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100">
+                </li>
+                <li>
+                    <label for="contrast">Contrast</label>
+                    <input type="range" min="0" max="200" value="100" id="contrast">
+                </li>
+                <li>
+                    <label for="brightness">Brightness</label>
+                    <input type="range" min="0" max="200" value="100" id="brightness">
+                </li>
+                <li>
+                    <label for="sepia">Sepia</label>
+                    <input type="range" min="0" max="200" value="0" id="sepia">
+                </li>
+                <li>
+                    <label for="grayscale">Grayscale</label>
+                    <input type="range" min="0" max="1" value="0" step="0.1" id="grayscale">
+                </li>
+                <li>
+                    <label for="blur">Blur</label>
+                    <input type="range" min="0" max="10" value="0" step="0.1" id="blur">
+                </li>
+                <li>
+                    <label for="hue-rotate">hue-rotate</label>
+                    <input type="range" min="0" max="350" value="0" id="hue_rotate">
+                </li>
+                <li>
+                    <label for="border-radius">border radius</label>
+                    <input type="range" min="0" max="100" value="0" id="border-radius">
+                </li>
+
+                    <li>
+                        <label for="opacity">opacity</label>
+                        <input type="range" min="0" max="1" value="1" step="0.1" id="opacity">
+                    </li>
+                    <li>
+                        <label for="skew">Skew</label>
+                        <input type="range" min="0" max="180" value="1" step="1" id="skew">
+                    </li>
+                    <li>
+                    <label for="rotate">Rotae</label>
+                    <input type="range" min="0" max="360" value="0" step="1" id="rotate">
+                    </li>
+                    <li>
+                    <a download="image" id="download">Download</a>
+                    <span onclick="resetValue()">reset</span>
+                    <span onclick="showBefore()" id="show">comparison</span>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="edit.js"></script>
+</body>
+
+</html>
